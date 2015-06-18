@@ -1,0 +1,9 @@
+<a ng-repeat="sc in subCategorias" ui-sref=".sub({id: sc.id})">
+  {{sc.nombre}} /
+</a>
+
+<ul>
+  <li ng-repeat="p in cProductos">
+    {{ p.nombre }}
+  </li>
+</ul>

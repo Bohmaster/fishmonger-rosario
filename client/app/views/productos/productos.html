@@ -1,0 +1,13 @@
+<ul>
+  <li ng-repeat="p in subProducts">
+    {{ p.nombre }}
+    <i class="glyphicon glyphicon-remove pull-right"
+    ng-click="borrarProducto(p.id)">
+  </i>
+  <a ng-click="editarProducto(p.id)">
+    <i class="glyphicon glyphicon-edit pull-right margin-left"></i>
+  </a>
+  </li>
+
+
+</ul>

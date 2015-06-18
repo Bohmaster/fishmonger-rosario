@@ -1,0 +1,21 @@
+<h4>Agregar producto</h4>
+<form name="todoForm" novalidate>
+  <div class="form-group" ng-class="{'has-error': todoForm.content.$invalid && todoForm.content.$dirty}">
+    <input type="text" class="form-control focus margin" name="nombre"
+    placeholder="Nombre" autocomplete="off" required
+    ng-model="producto.nombre">
+    <input type="text" class="form-control focus margin" name="categoria" list="categoria"
+    placeholder="Seleccione categoria" autocomplete="off" required
+    ng-model="producto.categoria">
+    <datalist id="categoria">
+      <option ng-repeat="c in categorias" value="{{c.nombre}}/{{c.id}}">
+      </datalist>
+      <input type="text" class="form-control focus margin" name="subcategoria" list="subcategorias"
+      placeholder="Seleccione subcategoria" autocomplete="off" required
+      ng-model="producto.subCategoria">
+      <datalist id="subcategorias">
+        <option ng-repeat="sc in subCategorias" value="{{sc.nombre}}">
+        </datalist>
+      </div>
+      <button class="btn btn-default" ng-disabled="todoForm.$invalid" ng-click="addProducto()">Agregar</button>
+    </form>

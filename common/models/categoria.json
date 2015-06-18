@@ -1,0 +1,26 @@
+{
+  "name": "Categoria",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "properties": {
+    "nombre": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "productos": {
+      "type": "hasMany",
+      "model": "Producto",
+      "foreignKey": ""
+    },
+    "subCategoria": {
+      "type": "hasMany",
+      "model": "SubCategoria",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": []
+}

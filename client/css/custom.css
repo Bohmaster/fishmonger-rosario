@@ -1,0 +1,24 @@
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
+.current{
+   font-size: 17px;
+}
+
+.sabe-nav {
+  height: 50px;
+  width: 100%;
+  background-color: black;
+}
+
+.sabe-cat {
+  height: 100px;
+  width: 100%;
+  background: red;
+}

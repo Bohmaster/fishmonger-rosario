@@ -1,0 +1,25 @@
+{
+  "name": "Producto",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "properties": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "codigo": {
+      "type": "number"
+    },
+    "precio": {
+      "type": "number"
+    },
+    "destacado": {
+      "type": "boolean"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}

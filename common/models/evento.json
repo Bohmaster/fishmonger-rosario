@@ -1,0 +1,28 @@
+{
+  "name": "Evento",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "properties": {
+    "tipo": {
+      "type": "string"
+    },
+    "descripcion": {
+      "type": "string"
+    },
+    "imagen": {
+      "type": "string"
+    },
+    "imagenes": {
+      "type": "string"
+    },
+    "nombre": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}

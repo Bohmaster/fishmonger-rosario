@@ -1,0 +1,22 @@
+<div class="sabe-nav">
+  <p ng-click="addProduct()">
+    NAV
+  </p>
+</div>
+
+<div id="categorias" class="sabe-cat">
+  <a ng-repeat="c in categorias" ui-sref=".categoria({categoriaId: c.id})">
+    {{ c.nombre }}
+  </a>
+</div>
+
+<ui-view></ui-view>
+
+<br>
+
+<a ng-repeat="p in pages"
+   ui-sref=".list({page: p})"
+   ng-class="{current: p == page}"
+   ng-click="changePage(p)">
+    {{p}}
+</a>

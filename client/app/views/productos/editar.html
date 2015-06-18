@@ -1,0 +1,18 @@
+<h4>{{ producto.nombre }}</h4>
+<form name="todoForm" novalidate>
+  <div class="form-group" ng-class="{'has-error': todoForm.content.$invalid && todoForm.content.$dirty}">
+    <input type="text" class="form-control focus margin" name="nombre"
+    placeholder="Nombre" autocomplete="off" required
+    ng-model="producto.nombre">
+    <input type="text" class="form-control focus margin" name="categoria"
+    placeholder="Seleccione categoria" autocomplete="off" required
+    ng-model="category.nombre">
+    <input type="text" class="form-control focus margin" name="subcategoria" list="subcategoriasTwo"
+      placeholder="Seleccione subcategoria" autocomplete="off" required
+      ng-model="subCategory.nombre">
+    <datalist id="subcategoriasTwo">
+        <option ng-repeat="sc in subCategoryes" value="{{sc.id}}/{{sc.nombre}}">
+    </datalist>
+  </div>
+      <button class="btn btn-default" ng-disabled="todoForm.$invalid" ng-click="editProducto()">Editar</button>
+</form>
